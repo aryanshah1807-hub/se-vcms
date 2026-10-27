@@ -1,0 +1,20 @@
+:root{--ink:#14272b;--bg:#f3f7f7;--card:#fff;--line:#d5e0e1;--teal:#0f766e;--amber:#b7720c;--coral:#b4443b;--blue:#2b5fa8;--slate:#5c6f73}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 'Atkinson Hyperlegible',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding:12px 24px;background:var(--ink);color:#fff}
+header h1{font-size:20px;margin:0 16px 0 0}nav{display:flex;gap:4px;flex:1}
+nav button{background:none;border:0;color:#bcd0d2;padding:8px 14px;border-radius:6px;font:inherit;cursor:pointer}
+nav button.on{background:var(--teal);color:#fff}
+main{max-width:1100px;margin:24px auto;padding:0 16px;display:grid;gap:20px}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+h2{margin:0 0 12px;font-size:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+label{display:grid;gap:4px;font-size:14px;color:var(--slate)}
+input,select,button,textarea{font:inherit}input,select{padding:8px;border:1px solid var(--line);border-radius:6px;color:var(--ink);background:#fff}
+button.btn{background:var(--teal);color:#fff;border:0;padding:9px 16px;border-radius:6px;cursor:pointer}
+button.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}button.btn.danger{background:var(--coral)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.warn{background:#fff4e0;border:1px solid var(--amber);padding:12px;border-radius:8px;margin:12px 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.err{color:var(--coral);margin:8px 0}.ok{color:var(--teal);margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+.chip{padding:2px 10px;border-radius:99px;color:#fff;font-size:13px;white-space:nowrap}
+.Requested{background:var(--slate)}.Scheduled{background:var(--blue)}.Checked-In{background:var(--amber)}.In-Progress{background:#7a4fa3}.Completed{background:var(--teal)}.Cancelled{background:var(--coral)}
+.row{display:flex;gap:6px;flex-wrap:wrap}.empty{color:var(--slate);padding:12px 0}
